@@ -1,0 +1,48 @@
+
+@media (min-width:991px){
+    nav.my_nav .container{
+        position: relative;
+    }
+    nav #my_cusustomNav ul{
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .3s;
+        cursor: pointer;
+    }
+    nav .my_logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all linear .5s;
+    }
+    nav .my_logo.active_logo{
+        left: 0%;
+        transform: translateX(0);
+    }
+    nav.my_nav {
+        height: 122px;
+    }
+    nav #my_cusustomNav .active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media (min-width:320px) and (max-width:991px){
+    header .welcome{
+        clip-path: none;
+        padding: 16px 0;
+    }
+    header .container{
+        max-width: 100%;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    header .socialLinks ul li a{
+        width: 29px;
+    }
+}
+@media (max-width:991px){
+    #services .services_card{
+        margin-bottom: 30px;
+    }
+}

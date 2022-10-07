@@ -1,0 +1,232 @@
+/*Cummon css start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+:root{
+    --primaryColor: #ffca36;
+    --secondaryColor: #353535;
+}
+.section_ttl{
+    margin: 80px 0 20px 0;
+}
+.section_ttl h2{
+    font-size: 35px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+.section_ttl p{
+    font-size: 16px;
+    line-height: 25px;
+    width: 473px;
+}
+/*Cummon css end*/
+/*hader css start*/
+
+header{
+    background-color: var(--primaryColor);
+    text-align: center;
+}
+header .welcome{
+    clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
+    font-size: 14px;
+    color: rgb(250, 247, 247);
+    padding: 16px 0;
+    background-color: var(--secondaryColor)
+}
+header .socialLinks ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+}
+
+header .socialLinks ul li a{
+    width: 30px;
+    height: 30px;
+    color: var(--secondaryColor);
+    font-size: 18px;
+    display: block;
+}
+header .socialLinks ul li::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    transform: scale(0);
+}
+header .socialLinks ul li::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+
+header .socialLinks ul li a::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: scale(0);
+    transition: .3s;
+}
+header .socialLinks ul li a::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transform: scale(0);
+    transition: .3s;
+}
+header .socialLinks ul li a:hover::after,
+header .socialLinks ul li a:hover::before,
+header .socialLinks ul li:hover::after,
+header .socialLinks ul li:hover::before{
+    transform: scale(1.2);
+}
+/*hader css end*/
+/*navbar css start*/
+
+/*navbar css end*/
+
+/*banner css start*/
+#banner{
+    background-image: url(../photos/banner.jpg);
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.banner_item{
+    width: 575px;
+    color: #fff;
+    margin-top: 230px;
+    z-index: 99;
+}
+.banner_item h2{
+    font-size: 35px;
+    line-height: 75px;
+
+}
+.banner_item p{
+    font-size: 16px;
+    line-height: 27px;
+}
+.banner_item .banner_btn a{
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 60px 15px;
+    transition: all linear .3s;
+}
+.banner_item .banner_btn a:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+/*banner css end*/
+/*services css start*/
+.services_card{
+    margin: 61px 0;
+    padding: 0 15px;
+}
+#services .servises_icon{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transform: rotate(45deg);
+    position: relative;
+}
+#services .servises_icon::after{
+    content: "";
+    width: 10px;
+    height: 43px;
+    border-right: 1px dashed var(--secondaryColor);
+    position: absolute;
+    top: 96px;
+    left: 105px;
+    transform: rotate(-45deg);
+}
+#services .services_desc{
+    padding: 60px 35px;
+    border: 1px solid var(--secondaryColor);
+    margin-top: 67px;
+}
+#services .servises_icon img{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+#services .services_desc h2{
+    font-size: 19px;
+    margin-bottom: 30px;
+
+}
+#services .services_desc{
+    font-size: 16px;
+    line-height: 28px;
+}
+/* .services_card:hover,
+.services_card:hover{
+    border: 1px solid rgb(252, 203, 7);
+    
+} */
+/*services css end*/
+/*about css start*/
+#about .aboutLeftSide{
+    background-image: url(../photos/aboutBGImage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 437px;
+}
+#about .aboutLeftSide img{
+    position: absolute;
+    right: -161px;
+    top: 0;
+}
+/*about css end*/
+
+
+
+
